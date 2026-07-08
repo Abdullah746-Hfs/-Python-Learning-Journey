@@ -1,0 +1,50 @@
+#Taking Input
+name = str(input("Please enter your name"))
+print()
+age = int(input("Please enter your age"))
+print()
+city = str(input("Please enter your city name"))
+print()
+#Output
+print("Your name: ", name)
+print()
+print("Your age: ", age)
+print()
+print("Your city name is: ", city)
+print()
+#Using Type
+print("Your data type for name is: ", type(name))
+print()
+print("Your data type for age is: ", type(age))
+print()
+print("Your data type for city name is: ", type(city))
+#Storing data in variables
+type_name = type(name)
+type_age = type(age)
+type_city = type(city)
+#Printing 2 things in 1 line
+print("Your name is: ", name, "|| Your data type is: ", type(name))
+print()
+print("Your age is: ", age, "|| Your data type is: ", type(age))
+print()
+print("Your city name is: ", city, "|| Your data type is: ", type(city))
+#Using the length function
+word = input("Enter your favourite word and Ill guess how many characters it has")
+print("Number of characters in your favourite word = ", len(word))
+print()
+print("Your name has ", len(name), " characters")
+#Using upper and lower case
+ucase = name.upper()
+lcase = name.lower()
+print("Btw your name in upper case looks like this: ", name.upper())
+print()
+print("Your city name in lower case looks like this: ", city.lower())
+print()
+print("Your name in upper case looks like this: ", name.upper(), "|| And your name in lower case looks like this: ", name.lower())
+#Concatenation
+print("Your name is:"+" "+name.upper, "||"+" "+"Your age is:"+" "+str(int(age)))
+num_1 = input("Enter your first number")
+num_2 = input("Enter your second number")
+print("The sum of your 2 numbers is:",+" "+int(str(num_1+num_2)))
+#The end
+print("Good Byeeeeeeeee, have a great day, :)")

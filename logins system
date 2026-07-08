@@ -1,0 +1,26 @@
+username = ""
+choice = ""
+password = ""
+attempts = 3
+while username != "admin" or choice == "yes":
+    username = str(input("Enter your username: ")).lower()
+    if username == "admin":
+        print("Correct username")
+    elif username != "admin":
+         choice = str(input("Do you want to exit? ")).lower()
+         if choice == "yes":
+             print("Exiting the program")
+             exit()
+while password != "admin123" and attempts > 0:
+   
+    password = str(input("Enter your password"))
+    if password == "admin123":
+        print("Access granted")
+    else: 
+        attempts -=1 
+        print("Incorrect password try again", " || Attempts left: ", attempts)
+
+
+    
+
+
